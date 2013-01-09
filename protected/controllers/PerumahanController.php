@@ -168,4 +168,7 @@ class PerumahanController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	
+
 }
