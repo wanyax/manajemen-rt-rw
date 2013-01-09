@@ -49,7 +49,7 @@ class Rumah extends CActiveRecord
 			array('blok_id, rt_id', 'length', 'max'=>10),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, nomor, nama, blok_id, rt_id', 'safe', 'on'=>'search'),
+			array('nomor, nama, blok_id, rt_id, rt, blok', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -78,7 +78,9 @@ class Rumah extends CActiveRecord
 			'nomor' => 'Nomor',
 			'nama' => 'Nama',
 			'blok_id' => 'Blok',
-			'rt_id' => 'Rt',
+			'rt_id' => 'RT',
+			'blok' => 'Blok',
+			'rt' => 'RT',
 		);
 	}
 
@@ -91,16 +93,29 @@ class Rumah extends CActiveRecord
 		// Warning: Please modify the following code to remove attributes that
 		// should not be searched.
 
-		$criteria=new CDbCriteria;
-
-		$criteria->compare('id',$this->id,true);
-		$criteria->compare('nomor',$this->nomor,true);
-		$criteria->compare('nama',$this->nama,true);
-		$criteria->compare('blok_id',$this->blok_id,true);
-		$criteria->compare('rt_id',$this->rt_id,true);
-
+		$criteria = new CDbCriteria;
+		$criteria->alias = $this->tableName();
+		//$criteria->compare('id',$this->id,true);
+		$criteria->compare('rumah.nomor',$this->nomor, true);
+		$criteria->compare('rumah.nama', $this->nama, true);
+		$criteria->compare('blok.nama',$this->blok, true);
+		$criteria->compare('rt.nama', $this->rt, true);
+		$criteria->with = array(
+			'rt' => array('select'=>'rt.nama','together'=>true),
+			'blok' => array('select'=>'blok.nama','together'=>true),
+		);
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
+
+	public function beforeSave() {
+		if (parent::beforeSave()) {
+			if (trim($this->blok_id) == "") {
+				$this->blok_id = null;
+			}
+			return true;
+		}
+	}
+
 }

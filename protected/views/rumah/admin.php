@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Rumah', 'url'=>array('index')),
+	//array('label'=>'List Rumah', 'url'=>array('index')),
 	array('label'=>'Create Rumah', 'url'=>array('create')),
 );
 
@@ -55,8 +55,16 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 			'type' => 'raw',
 			'value' => 'CHtml::link($data->nama,$data->id)'
 		),
-		'blok_id',
-		'rt_id',
+		array(
+			'name' => 'blok',
+			'type' => 'raw',
+			'value' => 'isset($data->blok->id) ? CHtml::link($data->blok->nama,array("blok/view", "id" => $data->blok->id)) : ""',
+		),
+		array(
+			'name' => 'rt',
+			'type' => 'raw',
+			'value' => 'CHtml::link($data->rt->nama,array("rt/view", "id" => $data->rt->id))'
+		),
 		array(
 			'class'=>'CButtonColumn',
 		),

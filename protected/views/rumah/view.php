@@ -25,10 +25,9 @@ $this->menu=array(
 		'nomor',
 		'nama',
 		 array(               // related city displayed as a link
-            'label'=>'Blok',
-            'type'=>'raw',
-            'value'=>CHtml::link(CHtml::encode($model->blok->nama),
-                array('blok/view','id'=>$model->blok->id)),
+            'label' =>'Blok',
+            'type' =>'raw',
+            'value' => $model->hasAttribute('blok_id') ? CHtml::link(CHtml::encode($model->blok->nama),array('blok/view','id'=>$model->blok->id)) : "",
         ),
 		 array(               // related city displayed as a link
             'label'=>'RT',
