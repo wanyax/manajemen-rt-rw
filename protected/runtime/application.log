@@ -1,0 +1,1156 @@
+2013/01/07 08:48:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tipehubungan".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('tipehubungan')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('tipehubungan')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('rw/tipehubungan')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rtrw/rw/tipehubungan
+---
+2013/01/07 10:54:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('perumahanautoco...')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/perumahana...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/rtrw/blok/perumahanautocomplete?term=M
+HTTP_REFERER=http://localhost/rtrw/blok/create
+---
+2013/01/07 10:54:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('perumahanautoco...')
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/perumahana...')
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/rtrw/blok/perumahanautocomplete?term=Me
+HTTP_REFERER=http://localhost/rtrw/blok/create
+---
+2013/01/07 11:03:21 [error] [exception.CException] exception 'CException' with message 'Property "Blok.perumahan_autocomplete" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('perumahan_autoc...')
+#1 C:\xampp\htdocs\yii\framework\validators\CRequiredValidator.php(52): CActiveRecord->__get('perumahan_autoc...')
+#2 C:\xampp\htdocs\yii\framework\validators\CValidator.php(214): CRequiredValidator->validateAttribute(Object(Blok), 'perumahan_autoc...')
+#3 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CValidator->validate(Object(Blok), NULL)
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(795): CModel->validate(NULL)
+#5 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(73): CActiveRecord->save()
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionCreate()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/create')
+#17 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/rtrw/blok/create
+HTTP_REFERER=http://localhost/rtrw/blok/create
+---
+2013/01/08 02:49:46 [error] [exception.CException] exception 'CException' with message 'Property "Blok.field_name" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('field_name')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2158): CActiveRecord->__get('field_name')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Blok), 'field_name')
+#3 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Blok), 'field_name', Array)
+#4 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CDataColumn.php(98): CHtml::activeTextField(Object(Blok), 'field_name', Array)
+#5 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridColumn.php(110): CDataColumn->renderFilterCellContent()
+#6 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(477): CGridColumn->renderFilterCell()
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(455): CGridView->renderFilter()
+#8 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(425): CGridView->renderTableHeader()
+#9 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#12 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(174): CBaseListView->run()
+#14 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(62): CBaseController->widget('zii.widgets.gri...', Array)
+#15 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#16 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#19 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(143): CController->render('admin', Array)
+#20 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#21 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#23 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#26 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#27 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#28 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#29 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#30 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#31 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#32 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#33 {main}
+REQUEST_URI=/rtrw/blok/admin
+HTTP_REFERER=http://localhost/rtrw/blok/1
+---
+2013/01/08 02:50:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Blok I".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('Blok I')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('Blok I')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/Blok I')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rtrw/blok/Blok%20I
+HTTP_REFERER=http://localhost/rtrw/blok/admin
+---
+2013/01/08 03:14:17 [error] [exception.CException] exception 'CException' with message 'Blok and its behaviors do not have a method or closure named "getData".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('getData', Array)
+#1 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(42): CActiveRecord->__call('getData', Array)
+#2 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(42): Blok->getData()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#7 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(143): CController->render('admin', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/rtrw/blok/admin
+---
+2013/01/08 03:25:40 [error] [exception.CException] exception 'CException' with message 'CDbCriteria and its behaviors do not have a method or closure named "with".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\rtrw\protected\models\Blok.php(95): CComponent->__call('with', Array)
+#1 C:\xampp\htdocs\rtrw\protected\models\Blok.php(95): CDbCriteria->with(Array)
+#2 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(42): Blok->search()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#7 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(143): CController->render('admin', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/rtrw/blok/admin
+---
+2013/01/08 03:31:31 [error] [exception.CException] exception 'CException' with message 'CDbCriteria and its behaviors do not have a method or closure named "with".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\rtrw\protected\models\Blok.php(95): CComponent->__call('with', Array)
+#1 C:\xampp\htdocs\rtrw\protected\models\Blok.php(95): CDbCriteria->with(Array)
+#2 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(42): Blok->search()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#7 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(143): CController->render('admin', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/rtrw/blok/admin
+---
+2013/01/08 03:45:06 [error] [exception.CException] exception 'CException' with message 'CDbCriteria and its behaviors do not have a method or closure named "with".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\rtrw\protected\models\Blok.php(96): CComponent->__call('with', Array)
+#1 C:\xampp\htdocs\rtrw\protected\models\Blok.php(96): CDbCriteria->with(Array)
+#2 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(42): Blok->search()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#7 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(143): CController->render('admin', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/rtrw/blok/admin
+---
+2013/01/08 03:50:19 [error] [exception.CException] exception 'CException' with message 'CDbCriteria and its behaviors do not have a method or closure named "with".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\rtrw\protected\models\Blok.php(96): CComponent->__call('with', Array)
+#1 C:\xampp\htdocs\rtrw\protected\models\Blok.php(96): CDbCriteria->with(Array)
+#2 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(42): Blok->search()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#7 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(143): CController->render('admin', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/rtrw/blok/admin
+---
+2013/01/08 04:04:41 [error] [exception.CException] exception 'CException' with message 'CDbCriteria and its behaviors do not have a method or closure named "with".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\rtrw\protected\models\Blok.php(95): CComponent->__call('with', Array)
+#1 C:\xampp\htdocs\rtrw\protected\models\Blok.php(95): CDbCriteria->with(Array)
+#2 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(42): Blok->search()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#7 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(143): CController->render('admin', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/rtrw/blok/admin
+---
+2013/01/08 04:05:24 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'perumahan.nama' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `blok` `t` WHERE perumahan.nama LIKE :ycp1.
+in C:\xampp\htdocs\rtrw\protected\views\blok\admin.php (62)
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (143)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 04:05:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'perumahan.nama' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `blok` `t` WHERE perumahan.nama LIKE :ycp1' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(108): CDataProvider->getData()
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(289): CBaseListView->init()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(148): CGridView->init()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(62): CBaseController->widget('zii.widgets.gri...', Array)
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#15 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(143): CController->render('admin', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#27 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/rtrw/blok/admin?Blok%5Bnama%5D=&Blok%5Bperumahan_id%5D=melati&Blok_page=1&ajax=blok-grid
+HTTP_REFERER=http://localhost/rtrw/blok/admin
+---
+2013/01/08 04:42:05 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "perumahan" is not defined in active record class "Perumahan".' in C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php:216
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(200): CActiveFinder->buildJoinTree(Object(CJoinElement), 'perumahan')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(271): CActiveFinder->buildJoinTree(Object(CJoinElement), 'perumahan.nama')
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(280): CActiveFinder->buildJoinTree(Object(CJoinElement), 'perumahan')
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1295): CActiveFinder->__construct(Object(Blok), Array)
+#5 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1426): CActiveRecord->query(Object(CDbCriteria))
+#6 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(153): CActiveRecord->findByPk('1')
+#7 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(89): BlokController->loadModel('1')
+#8 [internal function]: BlokController->actionUpdate('1')
+#9 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(BlokController), Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(BlokController), Object(ReflectionMethod), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('update')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/update')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/rtrw/blok/update/1
+---
+2013/01/08 04:43:44 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "bloks" is not defined in active record class "Blok".' in C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php:216
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(280): CActiveFinder->buildJoinTree(Object(CJoinElement), 'bloks')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1295): CActiveFinder->__construct(Object(Blok), Array)
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1426): CActiveRecord->query(Object(CDbCriteria))
+#4 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(153): CActiveRecord->findByPk('1')
+#5 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(89): BlokController->loadModel('1')
+#6 [internal function]: BlokController->actionUpdate('1')
+#7 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(BlokController), Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(BlokController), Object(ReflectionMethod), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('update')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/update')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/rtrw/blok/update/1
+---
+2013/01/08 04:44:03 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "perumahan" is not defined in active record class "Perumahan".' in C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php:216
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(200): CActiveFinder->buildJoinTree(Object(CJoinElement), 'perumahan')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(271): CActiveFinder->buildJoinTree(Object(CJoinElement), 'perumahan.nama')
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(280): CActiveFinder->buildJoinTree(Object(CJoinElement), 'perumahan')
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1295): CActiveFinder->__construct(Object(Blok), Array)
+#5 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1426): CActiveRecord->query(Object(CDbCriteria))
+#6 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(153): CActiveRecord->findByPk('1')
+#7 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(89): BlokController->loadModel('1')
+#8 [internal function]: BlokController->actionUpdate('1')
+#9 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(BlokController), Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(BlokController), Object(ReflectionMethod), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('update')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/update')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/rtrw/blok/update/1
+---
+2013/01/08 04:45:54 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "nama" is not defined in active record class "Perumahan".' in C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php:216
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(271): CActiveFinder->buildJoinTree(Object(CJoinElement), 'nama')
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(280): CActiveFinder->buildJoinTree(Object(CJoinElement), 'perumahan')
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1295): CActiveFinder->__construct(Object(Blok), Array)
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1426): CActiveRecord->query(Object(CDbCriteria))
+#5 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(153): CActiveRecord->findByPk('1')
+#6 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(89): BlokController->loadModel('1')
+#7 [internal function]: BlokController->actionUpdate('1')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(BlokController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(BlokController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('update')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/update')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/rtrw/blok/update/1
+---
+2013/01/08 05:02:10 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\rtrw\protected\views\blok\_form.php:32)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(870): BlokController->renderFile()
+#1 C:\xampp\htdocs\rtrw\protected\views\blok\create.php(18): BlokController->renderPartial()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): BlokController->renderInternal()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(870): BlokController->renderFile()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(783): BlokController->renderPartial()
+#6 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(79): BlokController->render()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionCreate()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BlokController->runAction()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): BlokController->filterAccessControl()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(266): BlokController->runActionWithFilters()
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): BlokController->run()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\rtrw\index.php(13): CWebApplication->run()
+REQUEST_URI=/rtrw/blok/create
+in C:\xampp\htdocs\rtrw\protected\views\blok\_form.php (32)
+in C:\xampp\htdocs\rtrw\protected\views\blok\create.php (18)
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (79)
+2013/01/08 05:08:10 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\rtrw\protected\views\blok\_form.php:32)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(870): BlokController->renderFile()
+#1 C:\xampp\htdocs\rtrw\protected\views\blok\create.php(18): BlokController->renderPartial()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): BlokController->renderInternal()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(870): BlokController->renderFile()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(783): BlokController->renderPartial()
+#6 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(79): BlokController->render()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionCreate()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BlokController->runAction()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#12 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): BlokController->filterAccessControl()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(266): BlokController->runActionWithFilters()
+#16 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): BlokController->run()
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#18 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\xampp\htdocs\rtrw\index.php(13): CWebApplication->run()
+REQUEST_URI=/rtrw/blok/create
+in C:\xampp\htdocs\rtrw\protected\views\blok\_form.php (32)
+in C:\xampp\htdocs\rtrw\protected\views\blok\create.php (18)
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (79)
+2013/01/08 05:16:44 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'perumahan.nama' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `blok` `t` WHERE perumahan.nama LIKE :ycp0.
+in C:\xampp\htdocs\rtrw\protected\views\blok\admin.php (66)
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (143)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:16:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'perumahan.nama' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `blok` `t` WHERE perumahan.nama LIKE :ycp0' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(108): CDataProvider->getData()
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(289): CBaseListView->init()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(148): CGridView->init()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(66): CBaseController->widget('zii.widgets.gri...', Array)
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#15 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(143): CController->render('admin', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#27 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/rtrw/blok/admin?Blok%5Bnama%5D=&Blok%5Bperumahan_id%5D=K&Blok_page=1&ajax=blok-grid
+HTTP_REFERER=http://localhost/rtrw/blok/admin
+---
+2013/01/08 05:22:18 [error] [php] Use of undefined constant nama - assumed 'nama' (C:\xampp\htdocs\rtrw\protected\models\Blok.php:93)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): BlokController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(870): BlokController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(783): BlokController->renderPartial()
+#3 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(143): BlokController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BlokController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): BlokController->filterAccessControl()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): BlokController->runActionWithFilters()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): BlokController->run()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\rtrw\index.php(13): CWebApplication->run()
+REQUEST_URI=/rtrw/blok/admin
+in C:\xampp\htdocs\rtrw\protected\models\Blok.php (93)
+in C:\xampp\htdocs\rtrw\protected\views\blok\admin.php (45)
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (143)
+2013/01/08 05:22:40 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\rtrw\protected\models\Blok.php:93)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): BlokController->renderInternal()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(870): BlokController->renderFile()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(783): BlokController->renderPartial()
+#3 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(143): BlokController->render()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BlokController->runAction()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): BlokController->filterAccessControl()
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(266): BlokController->runActionWithFilters()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): BlokController->run()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#15 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\rtrw\index.php(13): CWebApplication->run()
+REQUEST_URI=/rtrw/blok/admin
+in C:\xampp\htdocs\rtrw\protected\models\Blok.php (93)
+in C:\xampp\htdocs\rtrw\protected\views\blok\admin.php (45)
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (143)
+2013/01/08 05:23:40 [error] [exception.CException] exception 'CException' with message 'CDbCriteria and its behaviors do not have a method or closure named "with".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\rtrw\protected\models\Blok.php(98): CComponent->__call('with', Array)
+#1 C:\xampp\htdocs\rtrw\protected\models\Blok.php(98): CDbCriteria->with(Array)
+#2 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(45): Blok->search()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#7 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(143): CController->render('admin', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/rtrw/blok/admin
+HTTP_REFERER=http://localhost/rtrw/blok/1
+---
+2013/01/08 05:25:08 [warning] [application] Failed to set unsafe attribute "nama_perumahan" of "Blok".
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:25:15 [warning] [application] Failed to set unsafe attribute "nama_perumahan" of "Blok".
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:25:23 [warning] [application] Failed to set unsafe attribute "nama_perumahan" of "Blok".
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:25:47 [warning] [application] Failed to set unsafe attribute "nama_perumahan" of "Blok".
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:25:47 [error] [exception.CException] exception 'CException' with message 'CDbCriteria and its behaviors do not have a method or closure named "with".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\rtrw\protected\models\Blok.php(98): CComponent->__call('with', Array)
+#1 C:\xampp\htdocs\rtrw\protected\models\Blok.php(98): CDbCriteria->with(Array)
+#2 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(45): Blok->search()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#7 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(143): CController->render('admin', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/rtrw/blok/admin?Blok%5Bnama%5D=Blok+D&Blok%5Bnama_perumahan%5D=Me&Blok_page=1&ajax=blok-grid
+HTTP_REFERER=http://localhost/rtrw/blok/admin
+---
+2013/01/08 05:25:50 [error] [exception.CException] exception 'CException' with message 'CDbCriteria and its behaviors do not have a method or closure named "with".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\rtrw\protected\models\Blok.php(98): CComponent->__call('with', Array)
+#1 C:\xampp\htdocs\rtrw\protected\models\Blok.php(98): CDbCriteria->with(Array)
+#2 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(45): Blok->search()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#7 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(143): CController->render('admin', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/rtrw/blok/admin
+HTTP_REFERER=http://localhost/rtrw/blok/1
+---
+2013/01/08 05:28:50 [error] [exception.CException] exception 'CException' with message 'CDbCriteria and its behaviors do not have a method or closure named "with".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\rtrw\protected\models\Blok.php(95): CComponent->__call('with', Array)
+#1 C:\xampp\htdocs\rtrw\protected\models\Blok.php(95): CDbCriteria->with('perumahan', 'perumahan.nama')
+#2 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(45): Blok->search()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#7 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(143): CController->render('admin', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/rtrw/blok/admin
+HTTP_REFERER=http://localhost/rtrw/blok/1
+---
+2013/01/08 05:34:04 [warning] [application] Failed to set unsafe attribute "nama_perumahan" of "Blok".
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:38:47 [error] [php] Undefined index: Blok (C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php:140)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BlokController->runAction()
+#1 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): BlokController->filterAccessControl()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(266): BlokController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): BlokController->run()
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\rtrw\index.php(13): CWebApplication->run()
+REQUEST_URI=/rtrw/blok/admin
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (140)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:39:20 [warning] [application] Failed to set unsafe attribute "nama_perumahan" of "Blok".
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (140)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:39:24 [warning] [application] Failed to set unsafe attribute "nama_perumahan" of "Blok".
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (140)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:39:31 [warning] [application] Failed to set unsafe attribute "nama_perumahan" of "Blok".
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (140)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:41:26 [warning] [application] Failed to set unsafe attribute "nama_perumahan" of "Blok".
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (140)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:42:27 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'nama' in where clause is ambiguous. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `blok` `t`  LEFT OUTER JOIN `perumahan` `perumahan` ON (`t`.`perumahan_id`=`perumahan`.`id`)  WHERE ((nama LIKE :ycp0) AND (perumahan.nama LIKE :ycp1)).
+in C:\xampp\htdocs\rtrw\protected\views\blok\admin.php (66)
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (144)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:42:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'nama' in where clause is ambiguous. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `blok` `t`  LEFT OUTER JOIN `perumahan` `perumahan` ON (`t`.`perumahan_id`=`perumahan`.`id`)  WHERE ((nama LIKE :ycp0) AND (perumahan.nama LIKE :ycp1))' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(728): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(155): CJoinElement->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1544): CActiveFinder->count(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#7 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(108): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(289): CBaseListView->init()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(148): CGridView->init()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(66): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#14 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#17 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(144): CController->render('admin', Array)
+#18 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#26 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#28 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#29 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/rtrw/blok/admin?Blok%5Bnama%5D=B&Blok%5Bnama_perumahan%5D=K&Blok_page=1&ajax=blok-grid
+HTTP_REFERER=http://localhost/rtrw/blok/admin
+---
+2013/01/08 05:42:33 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'nama' in where clause is ambiguous. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `blok` `t`  LEFT OUTER JOIN `perumahan` `perumahan` ON (`t`.`perumahan_id`=`perumahan`.`id`)  WHERE ((nama LIKE :ycp0) AND (perumahan.nama LIKE :ycp1)).
+in C:\xampp\htdocs\rtrw\protected\views\blok\admin.php (66)
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (144)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:42:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'nama' in where clause is ambiguous. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `blok` `t`  LEFT OUTER JOIN `perumahan` `perumahan` ON (`t`.`perumahan_id`=`perumahan`.`id`)  WHERE ((nama LIKE :ycp0) AND (perumahan.nama LIKE :ycp1))' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(728): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(155): CJoinElement->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1544): CActiveFinder->count(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#7 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(108): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(289): CBaseListView->init()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(148): CGridView->init()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(66): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#14 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#17 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(144): CController->render('admin', Array)
+#18 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#26 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#28 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#29 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/rtrw/blok/admin?Blok%5Bnama%5D=B&Blok%5Bnama_perumahan%5D=K&Blok_page=1&ajax=blok-grid
+HTTP_REFERER=http://localhost/rtrw/blok/admin
+---
+2013/01/08 05:43:08 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'blok.nama' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `blok` `t`  LEFT OUTER JOIN `perumahan` `perumahan` ON (`t`.`perumahan_id`=`perumahan`.`id`)  WHERE (blok.nama LIKE :ycp0).
+in C:\xampp\htdocs\rtrw\protected\views\blok\admin.php (66)
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (144)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:43:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'blok.nama' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `blok` `t`  LEFT OUTER JOIN `perumahan` `perumahan` ON (`t`.`perumahan_id`=`perumahan`.`id`)  WHERE (blok.nama LIKE :ycp0)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(728): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(155): CJoinElement->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1544): CActiveFinder->count(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#7 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(108): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(289): CBaseListView->init()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(148): CGridView->init()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(66): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#14 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#17 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(144): CController->render('admin', Array)
+#18 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#26 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#28 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#29 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/rtrw/blok/admin?Blok%5Bnama%5D=Blok+I&Blok%5Bnama_perumahan%5D=&Blok_page=1&ajax=blok-grid
+HTTP_REFERER=http://localhost/rtrw/blok/admin
+---
+2013/01/08 05:43:15 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'blok.nama' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `blok` `t`  LEFT OUTER JOIN `perumahan` `perumahan` ON (`t`.`perumahan_id`=`perumahan`.`id`)  WHERE ((blok.nama LIKE :ycp0) AND (perumahan.nama LIKE :ycp1)).
+in C:\xampp\htdocs\rtrw\protected\views\blok\admin.php (66)
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (144)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:43:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'blok.nama' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `blok` `t`  LEFT OUTER JOIN `perumahan` `perumahan` ON (`t`.`perumahan_id`=`perumahan`.`id`)  WHERE ((blok.nama LIKE :ycp0) AND (perumahan.nama LIKE :ycp1))' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(728): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(155): CJoinElement->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1544): CActiveFinder->count(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#7 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(108): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(289): CBaseListView->init()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(148): CGridView->init()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(66): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#14 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#17 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(144): CController->render('admin', Array)
+#18 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#26 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#28 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#29 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/rtrw/blok/admin?Blok%5Bnama%5D=Blok+I&Blok%5Bnama_perumahan%5D=K&Blok_page=1&ajax=blok-grid
+HTTP_REFERER=http://localhost/rtrw/blok/admin
+---
+2013/01/08 05:44:42 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'nama' in where clause is ambiguous. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `blok` `t`  LEFT OUTER JOIN `perumahan` `perumahan` ON (`t`.`perumahan_id`=`perumahan`.`id`)  WHERE ((nama LIKE :ycp0) AND (perumahan.nama LIKE :ycp1)).
+in C:\xampp\htdocs\rtrw\protected\views\blok\admin.php (66)
+in C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php (144)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 05:44:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'nama' in where clause is ambiguous. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `blok` `t`  LEFT OUTER JOIN `perumahan` `perumahan` ON (`t`.`perumahan_id`=`perumahan`.`id`)  WHERE ((nama LIKE :ycp0) AND (perumahan.nama LIKE :ycp1))' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(728): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(155): CJoinElement->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1544): CActiveFinder->count(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#7 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(108): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(289): CBaseListView->init()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(148): CGridView->init()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\rtrw\protected\views\blok\admin.php(66): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#14 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#17 C:\xampp\htdocs\rtrw\protected\controllers\BlokController.php(144): CController->render('admin', Array)
+#18 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): BlokController->actionAdmin()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#26 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#28 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('blok/admin')
+#29 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/rtrw/blok/admin?Blok%5Bnama%5D=Blok+D&Blok%5Bnama_perumahan%5D=K&Blok_page=1&ajax=blok-grid
+HTTP_REFERER=http://localhost/rtrw/blok/admin
+---
+2013/01/08 09:02:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "testo".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('testo')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rtrw/testo
+---
+2013/01/08 09:02:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "testo".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('testo')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rtrw/testo
+---
+2013/01/08 09:03:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "testo".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('testo')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rtrw/testo
+---
+2013/01/08 09:12:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "perumahanautocomplete".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('perumahanautoco...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('perumahanautoco...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('rt/perumahanaut...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rtrw/rt/perumahanautocomplete?term=0
+HTTP_REFERER=http://localhost/rtrw/rt/create
+---
+2013/01/08 09:14:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "perumahanautocomplete".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('perumahanautoco...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('perumahanautoco...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('rt/perumahanaut...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rtrw/rt/perumahanautocomplete?term=0
+HTTP_REFERER=http://localhost/rtrw/rt/create
+---
+2013/01/08 09:14:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "perumahanautocomplete".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('perumahanautoco...')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('perumahanautoco...')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('rt/perumahanaut...')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/rtrw/rt/perumahanautocomplete?term=00
+HTTP_REFERER=http://localhost/rtrw/rt/create
+---
+2013/01/08 09:18:23 [error] [exception.CException] exception 'CException' with message 'The attribute must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in C:\xampp\htdocs\yii\framework\zii\widgets\CDetailView.php:181
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(174): CDetailView->run()
+#1 C:\xampp\htdocs\rtrw\protected\views\rt\view.php(28): CBaseController->widget('zii.widgets.CDe...', Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\rtrw\protected\controllers\RtController.php(56): CController->render('view', Array)
+#7 [internal function]: RtController->actionView('1')
+#8 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(RtController), Array)
+#9 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(RtController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('rt/view')
+#20 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/rtrw/rt/1
+HTTP_REFERER=http://localhost/rtrw/rt/create
+---
+2013/01/08 09:19:58 [error] [php] htmlspecialchars() expects parameter 1 to be string, object given (C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\utils\CFormatter.php(114): CFormatter->formatText()
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\CDetailView.php(216): CFormatter->format()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(174): CDetailView->run()
+#3 C:\xampp\htdocs\rtrw\protected\views\rt\view.php(28): RtController->widget()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): RtController->renderInternal()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(870): RtController->renderFile()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(783): RtController->renderPartial()
+#8 C:\xampp\htdocs\rtrw\protected\controllers\RtController.php(56): RtController->render()
+#9 unknown(0): RtController->actionView()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#11 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): RtController->runAction()
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#16 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RtController->filterAccessControl()
+#17 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(266): RtController->runActionWithFilters()
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): RtController->run()
+#21 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#22 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\xampp\htdocs\rtrw\index.php(13): CWebApplication->run()
+REQUEST_URI=/rtrw/rt/1
+in C:\xampp\htdocs\rtrw\protected\views\rt\view.php (28)
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (56)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:06:02 [warning] [application] Failed to set unsafe attribute "rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:06:46 [warning] [application] Failed to set unsafe attribute "rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:08:45 [warning] [application] Failed to set unsafe attribute "rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:09:42 [warning] [application] Failed to set unsafe attribute "rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:11:32 [warning] [application] Failed to set unsafe attribute "rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:14:34 [warning] [application] Failed to set unsafe attribute "rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:17:15 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:17:40 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:21:28 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:21:28 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rt.nama' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `rt` `t`  LEFT OUTER JOIN `rw` `rw` ON (`t`.`rw_id`=`rw`.`id`)  WHERE (rt.nama LIKE :ycp0).
+in C:\xampp\htdocs\rtrw\protected\views\rt\admin.php (62)
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (142)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:21:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'rt.nama' in 'where clause'. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `rt` `t`  LEFT OUTER JOIN `rw` `rw` ON (`t`.`rw_id`=`rw`.`id`)  WHERE (rt.nama LIKE :ycp0)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(728): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(155): CJoinElement->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1544): CActiveFinder->count(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#7 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(108): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(289): CBaseListView->init()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(148): CGridView->init()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\rtrw\protected\views\rt\admin.php(62): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#14 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#17 C:\xampp\htdocs\rtrw\protected\controllers\RtController.php(142): CController->render('admin', Array)
+#18 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): RtController->actionAdmin()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#22 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#26 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#28 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('rt/admin')
+#29 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/rtrw/rt/admin?Rt%5Bnama%5D=007&Rt%5Bnama_rw%5D=&Rt_page=1&ajax=rt-grid
+HTTP_REFERER=http://localhost/rtrw/rt/admin
+---
+2013/01/08 10:22:41 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:22:46 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:22:56 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:24:28 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:32:57 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:34:17 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:34:28 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:34:42 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:34:46 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:34:50 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:36:24 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:43:22 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:43:53 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:45:25 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:50:17 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (140)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:50:27 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (140)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:51:30 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:52:29 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/08 10:52:44 [warning] [application] Failed to set unsafe attribute "nama_rw" of "Rt".
+in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php (139)
+in C:\xampp\htdocs\rtrw\index.php (13)
