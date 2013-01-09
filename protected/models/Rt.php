@@ -76,9 +76,9 @@ class Rt extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'nama' => 'Nama',
-			'rw_id' => 'Rw',
-			'nama_rw' => 'Rw',
+			'nama' => 'RT',
+			'rw_id' => 'RW',
+			'nama_rw' => 'RW',
 		);
 	}
 

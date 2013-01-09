@@ -72,7 +72,7 @@ class Rw extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'nama' => 'Nama',
+			'nama' => 'RW',
 			'kelurahan' => 'Kelurahan',
 			'kecamatan' => 'Kecamatan',
 			'kota_madya' => 'Kota Madya',

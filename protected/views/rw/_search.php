@@ -11,10 +11,10 @@
 	'method'=>'get',
 )); ?>
 
-	<div class="row">
-		<?php echo $form->label($model,'id'); ?>
-		<?php echo $form->textField($model,'id',array('size'=>10,'maxlength'=>10)); ?>
-	</div>
+	<!--div class="row">
+		<?php //echo $form->label($model,'id'); ?>
+		<?php //echo $form->textField($model,'id',array('size'=>10,'maxlength'=>10)); ?>
+	</div-->
 
 	<div class="row">
 		<?php echo $form->label($model,'nama'); ?>
