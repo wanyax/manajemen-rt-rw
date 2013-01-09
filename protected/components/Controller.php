@@ -25,6 +25,12 @@ class Controller extends CController
         print "<pre>" . print_r($array, true) . "</pre>";
     }
 
-
+    /**
+	 * @param string the string variable that will convert into CamelCase.
+	 * @return camelcased string.
+	 */
+    public function toCamelCase($string) {
+        return preg_replace('/(?:^|_)(.?)/e',"strtoupper('$1')",$string);
+    }
     
 }

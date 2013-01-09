@@ -17,7 +17,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'nomor'); ?>
-		<?php echo $form->textField($model,'nomor',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'nomor',array('size'=>10,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'nomor'); ?>
 	</div>
 
@@ -35,7 +35,23 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'rt_id'); ?>
-		<?php echo $form->textField($model,'rt_id',array('size'=>10,'maxlength'=>10)); ?>
+		<?php //echo $form->textField($model,'rt_id',array('size'=>10,'maxlength'=>10)); ?>
+		<?php
+		  $this->widget('ext.customAutoComplete',
+		  array(
+		    'model' => $model,
+			//'value' => isset($model->rw->nama) ? $model->rw->nama : "",
+		    'attribute' => 'rt_id',
+		    'name' => 'rt_autocomplete',
+		    'source' => $this->createUrl('autocomplete/parse/rt'),
+		    'options'=>
+		       array(
+			      'minLength'=>'0',
+			      ),
+		    'htmlOptions'=>array(
+			'style'=>'height:20px;',
+			), 
+		  )); ?>
 		<?php echo $form->error($model,'rt_id'); ?>
 	</div>
 

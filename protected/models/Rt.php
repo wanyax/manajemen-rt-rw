@@ -100,4 +100,30 @@ class Rt extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+
+	public function searchAutoComplete($rt = "")
+	{
+		if ($rt != "")
+		{
+			$criteria = new CDbCriteria;
+			$criteria->compare('nama', $rt, true);
+			$data_provider = new CActiveDataProvider($this, array('criteria'=>$criteria, 'pagination' => false));
+			$return_array = array();
+			$data_found = $data_provider->getData();
+			foreach ($data_found as $rws)
+			{
+				$return_array[] = array(
+					"label" => $rws->nama,
+					"id" => $rws->id,
+					"value" => $rws->nama,
+				);
+			}
+			return $return_array;
+		}
+		else
+		{
+			return false;
+		}
+	}
+
 }
