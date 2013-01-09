@@ -23,6 +23,11 @@ $this->menu=array(
 	'attributes'=>array(
 		//'id',
 		'nama',
-		'perumahan.nama'
+		array(               // related city displayed as a link
+            'label'=>'Perumahan',
+            'type'=>'raw',
+            'value'=>CHtml::link(CHtml::encode($model->perumahan->nama),
+                array('perumahan/view','id'=>$model->perumahan->id)),
+        ),
 	),
 )); ?>

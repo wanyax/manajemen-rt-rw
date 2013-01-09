@@ -76,7 +76,7 @@ class Rumah extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'nomor' => 'Nomor',
-			'nama' => 'Nama',
+			'nama' => 'Nama Rumah',
 			'blok_id' => 'Blok',
 			'rt_id' => 'RT',
 			'blok' => 'Blok',

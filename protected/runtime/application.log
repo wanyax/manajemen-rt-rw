@@ -1822,3 +1822,25 @@ REQUEST_URI=/rtrw/rumah/admin
 in C:\xampp\htdocs\rtrw\protected\views\rumah\admin.php (72)
 in C:\xampp\htdocs\rtrw\protected\controllers\RumahController.php (143)
 in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/09 10:50:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\rtrw\protected\controllers\RtController.php:156
+Stack trace:
+#0 C:\xampp\htdocs\rtrw\protected\controllers\RtController.php(55): RtController->loadModel('3')
+#1 [internal function]: RtController->actionView('3')
+#2 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(RtController), Array)
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(RtController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('view')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('rt/view')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/rtrw/rt/3
+HTTP_REFERER=http://localhost/rtrw/blok/3
+---

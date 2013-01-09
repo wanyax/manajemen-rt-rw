@@ -71,7 +71,7 @@ class Blok extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'nama' => 'Nama',
+			'nama' => 'Blok',
 			'perumahan_id' => 'Perumahan',
 			'nama_perumahan' => 'Perumahan',
 		);
