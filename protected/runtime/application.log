@@ -1350,3 +1350,48 @@ Stack trace:
 REQUEST_URI=/rtrw/autocomplete/parse/rt?term=0
 HTTP_REFERER=http://localhost/rtrw/rumah/create
 ---
+2013/01/09 05:13:48 [error] [php] Undefined variable: rw (C:\xampp\htdocs\rtrw\protected\models\Blok.php:105)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): AutocompleteController->runAction()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): AutocompleteController->filterAccessControl()
+#7 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(266): AutocompleteController->runActionWithFilters()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): AutocompleteController->run()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\rtrw\index.php(13): CWebApplication->run()
+REQUEST_URI=/rtrw/autocomplete/parse/blok?term=b
+in C:\xampp\htdocs\rtrw\protected\models\Blok.php (105)
+in C:\xampp\htdocs\rtrw\protected\controllers\AutocompleteController.php (39)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/09 05:42:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`rt_rw`.`rumah`, CONSTRAINT `blok_id_rumah_fk` FOREIGN KEY (`blok_id`) REFERENCES `blok` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `rumah` (`nomor`, `nama`, `blok_id`, `rt_id`) VALUES (:yp0, :yp1, :yp2, :yp3).
+in C:\xampp\htdocs\rtrw\protected\controllers\RumahController.php (73)
+in C:\xampp\htdocs\rtrw\index.php (13)
+2013/01/09 05:42:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`rt_rw`.`rumah`, CONSTRAINT `blok_id_rumah_fk` FOREIGN KEY (`blok_id`) REFERENCES `blok` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION). The SQL statement executed was: INSERT INTO `rumah` (`nomor`, `nama`, `blok_id`, `rt_id`) VALUES (:yp0, :yp1, :yp2, :yp3)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 C:\xampp\htdocs\rtrw\protected\controllers\RumahController.php(73): CActiveRecord->save()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): RumahController->actionCreate()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('create')
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('rumah/create')
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\rtrw\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/rtrw/rumah/create
+HTTP_REFERER=http://localhost/rtrw/rumah/create
+---

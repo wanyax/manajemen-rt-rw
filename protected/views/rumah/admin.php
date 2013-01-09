@@ -3,7 +3,7 @@
 /* @var $model Rumah */
 
 $this->breadcrumbs=array(
-	'Rumahs'=>array('index'),
+	'Rumah'=>array('admin'),
 	'Manage',
 );
 
@@ -26,7 +26,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Rumahs</h1>
+<h1>Manage Rumah</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
@@ -45,9 +45,16 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		'id',
+		array(
+			'class' => 'IndexColumn',
+			'header' => 'No.',
+		),
 		'nomor',
-		'nama',
+		array(
+			'name' => 'nama',
+			'type' => 'raw',
+			'value' => 'CHtml::link($data->nama,$data->id)'
+		),
 		'blok_id',
 		'rt_id',
 		array(

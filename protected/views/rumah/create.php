@@ -3,12 +3,12 @@
 /* @var $model Rumah */
 
 $this->breadcrumbs=array(
-	'Rumahs'=>array('index'),
+	'Rumah'=>array('admin'),
 	'Create',
 );
 
 $this->menu=array(
-	array('label'=>'List Rumah', 'url'=>array('index')),
+	//array('label'=>'List Rumah', 'url'=>array('index')),
 	array('label'=>'Manage Rumah', 'url'=>array('admin')),
 );
 ?>

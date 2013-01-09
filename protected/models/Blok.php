@@ -96,5 +96,30 @@ class Blok extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
+	public function searchAutoComplete($blok = "")
+	{
+		if ($blok != "")
+		{
+			$criteria = new CDbCriteria;
+			$criteria->compare('nama', $blok, true);
+			$data_provider = new CActiveDataProvider($this, array('criteria'=>$criteria, 'pagination' => false));
+			$return_array = array();
+			$data_found = $data_provider->getData();
+			foreach ($data_found as $bloks)
+			{
+				$return_array[] = array(
+					"label" => $bloks->nama,
+					"id" => $bloks->id,
+					"value" => $bloks->nama,
+				);
+			}
+			return $return_array;
+		}
+		else
+		{
+			return false;
+		}
+	} 
 
 }

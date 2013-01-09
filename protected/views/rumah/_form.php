@@ -29,7 +29,24 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'blok_id'); ?>
-		<?php echo $form->textField($model,'blok_id',array('size'=>10,'maxlength'=>10)); ?>
+		<?php //echo $form->textField($model,'blok_id',array('size'=>10,'maxlength'=>10)); ?>
+		<?php //echo $form->textField($model,'rt_id',array('size'=>10,'maxlength'=>10)); ?>
+		<?php
+		  $this->widget('ext.customAutoComplete',
+		  array(
+		    'model' => $model,
+			'value' => isset($model->blok->nama) ? $model->blok->nama : "",
+		    'attribute' => 'blok_id',
+		    'name' => 'blok_autocomplete',
+		    'source' => $this->createUrl('autocomplete/parse/blok'),
+		    'options'=>
+		       array(
+			      'minLength'=>'0',
+			      ),
+		    'htmlOptions'=>array(
+			'style'=>'height:20px;',
+			), 
+		  )); ?>
 		<?php echo $form->error($model,'blok_id'); ?>
 	</div>
 
@@ -40,7 +57,7 @@
 		  $this->widget('ext.customAutoComplete',
 		  array(
 		    'model' => $model,
-			//'value' => isset($model->rw->nama) ? $model->rw->nama : "",
+			'value' => isset($model->rt->nama) ? $model->rt->nama : "",
 		    'attribute' => 'rt_id',
 		    'name' => 'rt_autocomplete',
 		    'source' => $this->createUrl('autocomplete/parse/rt'),

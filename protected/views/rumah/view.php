@@ -3,12 +3,12 @@
 /* @var $model Rumah */
 
 $this->breadcrumbs=array(
-	'Rumahs'=>array('index'),
-	$model->id,
+	'Rumah'=>array('admin'),
+	$model->nama,
 );
 
 $this->menu=array(
-	array('label'=>'List Rumah', 'url'=>array('index')),
+	//array('label'=>'List Rumah', 'url'=>array('index')),
 	array('label'=>'Create Rumah', 'url'=>array('create')),
 	array('label'=>'Update Rumah', 'url'=>array('update', 'id'=>$model->id)),
 	array('label'=>'Delete Rumah', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
@@ -16,15 +16,25 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Rumah #<?php echo $model->id; ?></h1>
+<h1>View Rumah <?php echo $model->nama; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'id',
+		//'id',
 		'nomor',
 		'nama',
-		'blok_id',
-		'rt_id',
+		 array(               // related city displayed as a link
+            'label'=>'Blok',
+            'type'=>'raw',
+            'value'=>CHtml::link(CHtml::encode($model->blok->nama),
+                array('blok/view','id'=>$model->blok->id)),
+        ),
+		 array(               // related city displayed as a link
+            'label'=>'RT',
+            'type'=>'raw',
+            'value'=>CHtml::link(CHtml::encode($model->rt->nama),
+                array('rt/view','id'=>$model->rt->id)),
+        ),
 	),
 )); ?>
