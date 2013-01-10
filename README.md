@@ -11,3 +11,5 @@ Instalasi:
 			'password' => '',
 			'charset' => 'utf8',
 		),
+6. akses aplikasi melalui browser http://localhost/rtrw
+7. Login dengan menggunakan user admin dengan passdword admin
